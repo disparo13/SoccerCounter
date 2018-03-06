@@ -43,6 +43,55 @@
                 android:padding="4dp"
                 android:text="0" />
 
+            <!--Horizontal line layout-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <!--Here's starts information block with penalties-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="WARNS: "
+                    />
+
+                <TextView
+                    android:id="@+id/team_a_warns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" PENALTIES: "
+                    />
+
+                <TextView
+                    android:id="@+id/team_a_penalties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+
+            <!--The end of penalties block-->
+
             <Button
                 android:id="@+id/button3teamA"
                 android:layout_width="match_parent"
@@ -50,8 +99,9 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="plusThreeForTeamA"
+                android:onClick="scoreForTeamA"
                 android:text="SCORE"
+                android:drawableLeft="@drawable/ball"
                 />
 
             <Button
@@ -62,7 +112,7 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="plusTwoForTeamA"
+                android:onClick="warnForTeamA"
                 android:text="WARNING"
                 android:drawableLeft="@drawable/yellow"/>
 
@@ -73,7 +123,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freeThrowForTeamA"
+                android:onClick="penaltyForTeamA"
                 android:text="PENALTY"
                 android:drawableLeft="@drawable/red"/>
 
@@ -118,6 +168,56 @@
                 android:padding="4dp"
                 android:text="0" />
 
+            <!--Horizontal line layout-->
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+            <!--Here's starts information block with penalties-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="WARNS: "
+                    />
+
+                <TextView
+                    android:id="@+id/team_b_warns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text=" PENALTIES: "
+                    />
+
+                <TextView
+                    android:id="@+id/team_b_penalties"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    />
+
+            </LinearLayout>
+
+            <!--The end of penalties block-->
+
+
             <Button
                 android:id="@+id/button3teamB"
                 android:layout_width="match_parent"
@@ -125,8 +225,9 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="plusThreeForTeamB"
-                android:text="SCORE" />
+                android:onClick="scoreForTeamB"
+                android:text="SCORE"
+                android:drawableLeft="@drawable/ball"/>
 
             <Button
                 android:id="@+id/button2teamB"
@@ -136,7 +237,7 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="plusTwoForTeamB"
+                android:onClick="warnForTeamB"
                 android:text="WARNING"
                 android:drawableLeft="@drawable/yellow"/>
 
@@ -147,7 +248,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="freeThrowForTeamB"
+                android:onClick="penaltyForTeamB"
                 android:text="PENALTY"
                 android:drawableLeft="@drawable/red"/>
 
