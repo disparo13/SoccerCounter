@@ -24,24 +24,24 @@
                 android:id="@+id/nameTeamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
                 android:layout_marginBottom="16dp"
-                android:text="@string/teamA" />
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/teamA"
+                android:textColor="#616161"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/team_a_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="56sp"
-                android:fontFamily="sans-serif-light"
-                android:textColor="#000000"
                 android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="0" />
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
 
             <!--Horizontal line layout-->
             <View
@@ -54,31 +54,36 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="WARNS: "
+                    android:paddingRight="2dp"
+                    android:text="@string/warns"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
                     />
 
                 <TextView
                     android:id="@+id/team_a_warns"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
                     android:text="0"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:gravity="center_horizontal"
                     android:fontFamily="sans-serif-condensed"
-                    android:text=" PENALTIES: "
+                    android:gravity="center_horizontal"
+                    android:paddingRight="2dp"
+                    android:text="@string/penalties"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
                     />
 
                 <TextView
@@ -99,33 +104,36 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:onClick="scoreForTeamA"
-                android:text="SCORE"
                 android:drawableLeft="@drawable/ball"
+                android:onClick="scoreForTeamA"
+                android:text="@string/score"
+                android:textAllCaps="true"
                 />
 
             <Button
                 android:id="@+id/button2teamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/yellow"
                 android:onClick="warnForTeamA"
-                android:text="WARNING"
-                android:drawableLeft="@drawable/yellow"/>
+                android:text="@string/warning"
+                android:textAllCaps="true" />
 
             <Button
                 android:id="@+id/button1teamA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/red"
                 android:onClick="penaltyForTeamA"
-                android:text="PENALTY"
-                android:drawableLeft="@drawable/red"/>
+                android:text="@string/penalty"
+                android:textAllCaps="true" />
 
 
         </LinearLayout>
@@ -149,24 +157,24 @@
                 android:id="@+id/nameTeamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif-medium"
-                android:textColor="#616161"
                 android:layout_marginBottom="16dp"
-                android:text="@string/teamB" />
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/teamB"
+                android:textColor="#616161"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/team_b_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="56sp"
-                android:fontFamily="sans-serif-light"
-                android:textColor="#000000"
                 android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="0" />
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="56sp" />
 
             <!--Horizontal line layout-->
             <View
@@ -179,31 +187,36 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp">
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
                     android:fontFamily="sans-serif-condensed"
-                    android:text="WARNS: "
+                    android:paddingRight="2dp"
+                    android:text="@string/warns"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
                     />
 
                 <TextView
                     android:id="@+id/team_b_warns"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
                     android:text="0"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:gravity="center_horizontal"
                     android:fontFamily="sans-serif-condensed"
-                    android:text=" PENALTIES: "
+                    android:gravity="center_horizontal"
+                    android:paddingRight="2dp"
+                    android:text="@string/penalties"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
                     />
 
                 <TextView
@@ -225,32 +238,35 @@
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:drawableLeft="@drawable/ball"
                 android:onClick="scoreForTeamB"
-                android:text="SCORE"
-                android:drawableLeft="@drawable/ball"/>
+                android:text="@string/score"
+                android:textAllCaps="true" />
 
             <Button
                 android:id="@+id/button2teamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginBottom="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/yellow"
                 android:onClick="warnForTeamB"
-                android:text="WARNING"
-                android:drawableLeft="@drawable/yellow"/>
+                android:text="@string/warning"
+                android:textAllCaps="true" />
 
             <Button
                 android:id="@+id/button1teamB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginTop="4dp"
+                android:drawableLeft="@drawable/red"
                 android:onClick="penaltyForTeamB"
-                android:text="PENALTY"
-                android:drawableLeft="@drawable/red"/>
+                android:text="@string/penalty"
+                android:textAllCaps="true" />
 
 
         </LinearLayout>
@@ -260,11 +276,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reset"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="resetScores"
+        android:text="@string/reset"
+        android:textAllCaps="true"
         />
 
 </RelativeLayout>
